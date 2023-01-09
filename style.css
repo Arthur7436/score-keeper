@@ -4,10 +4,12 @@
     margin: auto;
     width: 50%;
     background-color: red;
+    display: flex;
 }
 
-#img {
-    max-width: 10px;
-    max-height: 10px;
+img {
+    height: auto;
+    width: 100%;
+    flex-grow: inherit;
 }
 
