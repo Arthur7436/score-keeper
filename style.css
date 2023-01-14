@@ -1,15 +1,15 @@
 #container {
-    height: 40rem;
-    width: 40rem;
+    height: auto;
+    width: 200px;
     margin: auto;
-    width: 50%;
+    width: 30%;
     background-color: red;
     display: flex;
+    flex-direction: column;
 }
 
 img {
-    height: auto;
+    height: 300px;
     width: 100%;
-    flex-grow: inherit;
 }
 
