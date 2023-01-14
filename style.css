@@ -13,3 +13,16 @@ img {
     width: 100%;
 }
 
+#btns {
+    
+}
+
+#btn-1, #btn-2, #btn-3 {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
