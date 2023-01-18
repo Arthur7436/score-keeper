@@ -14,8 +14,21 @@ img {
 }
 
 #btns {
-    
+    display: flex;
+    justify-content: center;
 }
+
+button {
+    width: 32%;
+    height: 40px;
+    display: inline-block;
+}
+
+#btn-1, #btn-2, #btn-3 {
+    display: inline-block !important;
+}
+
+
 
 
 
