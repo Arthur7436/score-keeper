@@ -22,7 +22,11 @@
             <h2><span id="p1">0</span> to <span id="p2">0</span></h2>
             <p>Use the buttons below to keep score</p>
             <h2>Playing to
-                <select name="" id="">
+                <select name="option" id="option">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
                     <option value="5">5</option>
                     <option value="6">6</option>
                     <option value="7">7</option>
@@ -42,20 +46,23 @@
         //score increases by +1 everytime it is clicked 
         let p1 = document.getElementById('p1');
         let i = 1;
-        function buttonClick1(){
+        function buttonClick1() {
             p1.innerHTML = i++;
         }
         //score increases by +1 everytime it is clicked 
         let p2 = document.getElementById('p2');
         let j = 1;
-        function buttonClick2(){
+        function buttonClick2() {
             p2.innerHTML = j++;
         }
         //resets the score when clicked
-        function reset(){
+        function reset() {
             p1.innerHTML = 0;
             p2.innerHTML = 0;
         }
+        //If either player reaches to the maximum score: winner turns green and loser turns red. Game must restart.
+        
+
 
     </script>
 </body>
