@@ -43,18 +43,6 @@
         </div>
     </div>
     <script>
-        //score increases by +1 everytime it is clicked 
-        let p1 = document.getElementById('p1');
-        let i = 1;
-        function buttonClick1() {
-            p1.innerHTML = i++;
-        }
-        //score increases by +1 everytime it is clicked 
-        let p2 = document.getElementById('p2');
-        let j = 1;
-        function buttonClick2() {
-            p2.innerHTML = j++;
-        }
         //resets the score when clicked
         function reset() {
             p1.innerHTML = 0;
@@ -62,10 +50,29 @@
         }
         //If either player reaches to the maximum score: winner turns green and loser turns red. Game must restart.
         let option = document.getElementById('option');
-        option.onchange = (ev) =>{
-          console.log(option.value);
+        option.onchange = (ev) => {
+            console.log(option.value);
         }
-        
+        //score increases by +1 everytime it is clicked 
+        let p1 = document.getElementById('p1');
+        let i = 1;
+        function buttonClick1() {
+            p1.innerHTML = i++;
+            if (p1.innerHTML == option.value) {
+                p1.style.color = 'green';
+                p2.style.color = 'red';
+            }
+        }
+        //score increases by +1 everytime it is clicked 
+        let p2 = document.getElementById('p2');
+        let j = 1;
+        function buttonClick2() {
+            p2.innerHTML = j++;
+            if (p2.innerHTML == option.value) {
+                p1.style.color = 'red';
+                p2.style.color = 'green';
+            }
+        }
 
 
     </script>
