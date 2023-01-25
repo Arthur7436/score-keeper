@@ -47,13 +47,16 @@
         function reset() {
             p1.innerHTML = 0;
             p2.innerHTML = 0;
+            //changes back to normal color when resetting
+            p1.style.color = '#000';
+            p2.style.color = '#000';
         }
-        //If either player reaches to the maximum score: winner turns green and loser turns red. Game must restart.
+        //storing the value of option selected by user
         let option = document.getElementById('option');
         option.onchange = (ev) => {
             console.log(option.value);
         }
-        //score increases by +1 everytime it is clicked 
+        //score increases by +1 everytime p1 button is clicked 
         let p1 = document.getElementById('p1');
         let i = 1;
         function buttonClick1() {
@@ -61,9 +64,9 @@
             if (p1.innerHTML == option.value) {
                 p1.style.color = 'green';
                 p2.style.color = 'red';
-            }
+            } 
         }
-        //score increases by +1 everytime it is clicked 
+        //score increases by +1 everytime p2 button is clicked 
         let p2 = document.getElementById('p2');
         let j = 1;
         function buttonClick2() {
