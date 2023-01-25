@@ -2,7 +2,7 @@
     height: auto;
     width: 200px;
     margin: auto;
-    width: 30%;
+    width: 40%;
     background-color: red;
     display: flex;
     flex-direction: column;
@@ -24,15 +24,8 @@ button {
     display: inline-block;
 }
 
-#btn-1, #btn-2, #btn-3 {
+#btn-1,
+#btn-2,
+#btn-3 {
     display: inline-block !important;
 }
-
-
-
-
-
-
-
-
-
